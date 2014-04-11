@@ -1,0 +1,10 @@
+    // Fake out the almond loader - shim these dependencies to their globals.
+    // Make sure these globals are already on the page - e.g. by require-shims in the app
+    define('underscore', function () { return _; });
+    define('jquery', function () { return $; });
+    define('underscore-string', function () { return _s; });
+    define('moment', function () { return moment; });
+    define('q', function () { return Q; });
+
+    return require('wingspan-contrib');
+}));

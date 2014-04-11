@@ -1,0 +1,26 @@
+{
+    "name": "wingspan-contrib",
+    "version": "0.1.0",
+    "homepage": "https://github.com/wingspan/wingspan-contrib",
+    "authors": [
+        "Wingspan Technology, Inc."
+    ],
+    "license": "MIT",
+    "private": false,
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ],
+    "dependencies": {
+        "jquery": "~1.9.1",
+        "underscore": "~1.4.4",
+        "underscore.string": "~2.3.3",
+        "momentjs": "~2.0.0",
+        "q": "~0.9.6",
+        "requirejs": "~2.1.9",
+        "almond": "~0.2.7"
+    }
+}
