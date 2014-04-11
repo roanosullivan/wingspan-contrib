@@ -46,7 +46,7 @@ module.exports = function (grunt) {
                     underscore: '../bower_components/underscore/underscore',
                     'underscore-string': '../bower_components/underscore.string/lib/underscore.string',
                     jquery: '../bower_components/jquery/jquery',
-                    moment: '../bower_components/moment/moment',
+                    moment: '../bower_components/momentjs/moment',
                     q: '../bower_components/q/q',
                     almond: '../bower_components/almond/almond'
                 },
