@@ -4,6 +4,6 @@
             'underscore', 'jquery', 'underscore-string', 'moment', 'q'
         ], factory);
     } else {
-        root.WingspanData = factory(root._, root.$, root._s, root.moment, root.Q);
+        root.WingspanContrib = factory(root._, root.$, root._s, root.moment, root.Q);
     }
 }(this, function (_, $, _s, moment, Q) {
