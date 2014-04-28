@@ -1,6 +1,4 @@
-define([
-    'lodash'
-], function (_) {
+define([], function () {
     'use strict';
 
     // These two functions are from Facebook React.

@@ -1,8 +1,8 @@
 define([
-    './util'
-], function (util) {
+    './util',
+    './merge'
+], function (util, merge) {
     'use strict';
 
-    return util;
+    return _.extend(util, { merge: merge });
 });
-
