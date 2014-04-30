@@ -1,13 +1,11 @@
-define([], function () {
+define([
+    'underscore'
+], function (_) {
     'use strict';
-
-    // These two functions are from Facebook React.
 
 
     function mergeInto(one, two) {
-        //checkMergeObjectArg(one);
         if (two != null) {
-            //checkMergeObjectArg(two);
             for (var key in two) {
                 if (!two.hasOwnProperty(key)) {
                     continue;
@@ -17,20 +15,9 @@ define([], function () {
         }
     }
 
-    /**
-     * Shallow merges two structures into a return value, without mutating either.
-     *
-     * @param {?object} one Optional object with properties to merge from.
-     * @param {?object} two Optional object with properties to merge from.
-     * @return {object} The shallow extension of one by two.
-     */
-    var merge = function(one, two) {
-        var result = {};
-        mergeInto(result, one);
-        mergeInto(result, two);
-        return result;
-    };
-
+    function merge(/* a, b, ... */) {
+        return _.reduce(arguments, mergeInto, {});
+    }
 
     return merge;
 });
