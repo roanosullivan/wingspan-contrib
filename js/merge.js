@@ -13,6 +13,8 @@ define([
                 one[key] = two[key];
             }
         }
+
+        return one;
     }
 
     function merge(/* a, b, ... */) {
