@@ -1,7 +1,7 @@
 (function (root, factory) {
     if (typeof define === 'function' && define.amd) {
         define([
-            'underscore', 'jquery', 'underscore-string', 'moment', 'q'
+            'underscore', 'jquery', 'underscore.string', 'moment', 'q'
         ], factory);
     } else {
         root.WingspanContrib = factory(root._, root.$, root._s, root.moment, root.Q);

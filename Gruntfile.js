@@ -44,7 +44,7 @@ module.exports = function (grunt) {
 
                 paths: {
                     underscore: '../bower_components/underscore/underscore',
-                    'underscore-string': '../bower_components/underscore.string/lib/underscore.string',
+                    'underscore.string': '../bower_components/underscore.string/lib/underscore.string',
                     jquery: '../bower_components/jquery/jquery',
                     moment: '../bower_components/momentjs/moment',
                     q: '../bower_components/q/q',
@@ -53,7 +53,7 @@ module.exports = function (grunt) {
 
                 shim: {
                     'underscore': { deps: [], exports: '_' },
-                    'underscore-string': { deps: ['underscore'], exports: ['_s'] },
+                    'underscore.string': { deps: [], exports: ['_s'] },
                     'jquery': { deps: [], exports: '$' },
                     'moment': { deps: [], exports: 'moment' }
                 },
@@ -71,7 +71,7 @@ module.exports = function (grunt) {
                 options: {
                     out: 'dist/wingspan-contrib.js',
                     include: ['almond', 'wingspan-contrib'],
-                    exclude: ['q', 'jquery', 'underscore', 'require', 'underscore-string', 'moment']
+                    exclude: ['q', 'jquery', 'underscore', 'require', 'underscore.string', 'moment']
                 }
             }
         }

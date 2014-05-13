@@ -1,7 +1,6 @@
 define([
-    'underscore', 'jquery', 'moment', 'q',
-    'underscore-string'
-], function (_, $, moment, Q) {
+    'underscore', 'underscore.string', 'jquery', 'moment', 'q'
+], function (_, str, $, moment, Q) {
     'use strict';
 
     var exports = {};
@@ -177,7 +176,7 @@ define([
         }
         var q = findData(html, 'wspt-' + key, value);
         if (1 !== q.size()) {
-            var sErr = _.str.sprintf('Expected one target at `%s`=`%s` but found `%s` in the current DOM.', key, value, q.size());
+            var sErr = str.sprintf('Expected one target at `%s`=`%s` but found `%s` in the current DOM.', key, value, q.size());
             debugger;
             throw sErr;
         }
@@ -196,7 +195,7 @@ define([
             // Since we only call this when we're in trouble (e.g. about to throw an exception) in makes sense to
             // just leave this debugger statement in.
             debugger;
-            return _.str.sprintf('Can\'t show HTML: %s\n%s', h, _.escape(e.toString()));
+            return str.sprintf('Can\'t show HTML: %s\n%s', h, _.escape(e.toString()));
         }
     }
 
@@ -212,7 +211,7 @@ define([
         catch (e) {
             // Since we only call this when we're in trouble (e.g. about to throw an exception) it makes sense to just leave this debugger statement in.
             debugger;
-            return _.str.sprintf('Can\'t show JSON: %s\n%s', o, _.escape(e.toString()));
+            return str.sprintf('Can\'t show JSON: %s\n%s', o, _.escape(e.toString()));
         }
     }
 
